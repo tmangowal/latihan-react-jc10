@@ -1,0 +1,136 @@
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 13px;
+  align-items: center;
+  padding: 5px;
+  padding-right: 15px;
+  border: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: black;
+  margin: 0px 6px;
+}
+
+.navbar img{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.navbar img:hover{
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  color: grey;
+  text-decoration: underline;
+}
+
+.main{
+  flex: 8 
+}
+
+.footer{
+  flex: 1
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border : 0;
+  margin-top: 150px;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+}
+
+.main [type="text"]{
+  height: 39px;
+  border-radius: 16px;
+  outline: none;
+  border: 1px solid lightgray;
+  font-size: 16px;
+  padding: 0px 15px;
+  margin-top: 30px;
+  width: 40%;
+  align-self: center;
+}
+
+.main [type="text"]:hover, .main [type="text"]:focus{
+  box-shadow: 0px 2px 3px 1px rgba(0,0,0,0.2);
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons input{
+  background-color: #F3F3F3;
+  border: 1px solid white;
+  padding: 13px;
+  margin: 0px 5px;
+  outline: none;
+  color: #757575;
+  font-size: 13px;
+  border-radius: 7px;
+}
+
+.buttons input:hover{
+  border : 1px solid gainsboro;
+  cursor: pointer;
+  color: black;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.bot-footer, .top-footer{
+  background-color: #F2F2F2;
+  flex: 1;
+  display: flex;
+  padding: 15px;
+}
+
+.bot-footer{
+  justify-content: space-between;
+}
+
+.bot-footer a{
+  text-decoration: none;
+  color: #757575;
+  font-size: 13px;
+}
+
+.top-footer{
+  color: #757575;
+  border-bottom: 1px solid #757575;
+}
